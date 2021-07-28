@@ -1,0 +1,104 @@
+.bio-container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+
+    .bio {
+        width: 50%;
+        height: 50%;
+
+        h1 {
+            font-size: 60px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .icon-set {
+            margin-top: 10px;
+            margin-right: 100px;
+            display: flex;
+
+            .icon-element {
+                color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+
+                .icon-text {
+                    margin-top: 5px;
+                }
+            }
+
+            .icon-element:hover {
+                color: #646262;
+                cursor: pointer;
+            }
+        }
+
+        .bio-text {
+            margin-top: 20px;
+            margin-right: 40px;
+            font-size: 20px;
+            line-height: 20pt;
+
+            .text-link:hover {
+                color: #646262;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .pic-of-me {
+        width: 50%;
+        height: 50%;
+        border-radius: 20px;
+    }
+}
+
+@media(max-width: 999px) {
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .bio {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .icon-set {
+                margin-right: 0px;
+            }
+
+            .bio-text {
+                margin-left: 40px;
+            }
+        }
+
+        .pic-of-me {
+            height: 80%;
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width: 599px) {
+    .bio-container {
+        .bio {
+            h1 {
+                font-size: 45px;
+            }
+
+            h2 {
+                font-size: 25px
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.skills {
+    padding: 10px 15px 10px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    legend {
+        font-size: 20px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .skills-button {
+        padding: 5px 10px 5px 10px;
+        font-size: 16px;
+        border-radius: 8px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .skills-button:hover {
+        color: #687ea5;
+        cursor: pointer;
+    }
+}
