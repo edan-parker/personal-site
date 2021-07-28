@@ -2,6 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://edan-parke.github.io/personal-site",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -11,6 +12,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "4.14.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
@@ -24,8 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier '**/*.{js,ts,jsx,tsx,md,scss,css,json}'",
-    "prettify": "yarn prettier --write"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
