@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import { descriptionObject } from '../common/types';
-import './ResumeItem.scss';
+import { descriptionObject } from '../../common/types';
 
 interface IProps {
     logo: string,

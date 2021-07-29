@@ -1,9 +1,9 @@
-import resumeData from '../components/common/resumeData.json';
-import { descriptionObject } from '../components/common/types';
+import resumeData from '../common/resumeData.json';
+import { descriptionObject } from '../common/types';
 
 const skillsToResumeMap = (skillText:string): Array<descriptionObject> => {
     let flatDescriptionArray: Array<descriptionObject> = [];
-    resumeData.forEach((resumeItem) => flatDescriptionArray.push(...resumeItem.description))
+    resumeData.work.forEach((resumeItem) => flatDescriptionArray.push(...resumeItem.description));
 
     const filteredArray = flatDescriptionArray.filter((description) => {
         return description.text.toLowerCase().includes(skillText.toLowerCase());

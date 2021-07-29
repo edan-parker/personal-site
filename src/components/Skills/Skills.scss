@@ -13,10 +13,12 @@
         font-size: 16px;
         border-radius: 8px;
         margin: 5px 5px 5px 5px;
+        transition: all .1s ease-in-out;
     }
 
     .skills-button:hover {
         color: #687ea5;
         cursor: pointer;
+        transform: scale(1.1);
     }
 }

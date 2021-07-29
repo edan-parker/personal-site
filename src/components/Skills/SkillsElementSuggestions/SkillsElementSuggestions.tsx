@@ -1,4 +1,4 @@
-import { descriptionObject } from '../../common/types';
+import { descriptionObject } from '../../../common/types';
 import SkillsElementSuggestionRow from './SkillsElementSuggestionRow';
 import skillsToResumeMap from '../../../utils/skillsToResumeMap';
 import './SkillsElementSuggestions.scss';

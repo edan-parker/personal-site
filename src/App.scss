@@ -1,10 +1,8 @@
-$base-color: #03264c;
-
 * {margin: 0; padding: 0;}
 
 body {
     padding: 30px 30px 50px 30px;
-    background-color: $base-color;
+    background-color: #03264c;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,21 +13,21 @@ body {
         padding: 50px 80px 0px 80px;
         background-color: seashell;
         width: 800px;
-        height: 1600px;
+        height: 1900px;
     }
     
     @media(max-width: 999px) {
         .main-site {
             padding: 50px 20px 0px 20px;
             width: 500px;
-            height: 2400px;
+            height: 2800px;
         }
     }
     
     @media(max-width: 599px) {
         .main-site {
             width: 300px;
-            height: 3100px;
+            height: 3600px;
         }
     }
 }

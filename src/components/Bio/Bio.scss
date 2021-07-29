@@ -20,8 +20,7 @@
         }
 
         .icon-set {
-            margin-top: 10px;
-            margin-right: 100px;
+            margin: 10px 100px 0px 0px;
             display: flex;
 
             .icon-element {
@@ -74,7 +73,7 @@
             margin-bottom: 20px;
 
             .icon-set {
-                margin-right: 0px;
+                margin: 10px 50px 0px 50px;
             }
 
             .bio-text {
@@ -98,6 +97,10 @@
 
             h2 {
                 font-size: 25px
+            }
+
+            .icon-set {
+                margin: 10px 20px 0px 20px;
             }
         }
     }
