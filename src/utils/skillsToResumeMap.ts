@@ -1,8 +1,8 @@
 import resumeData from '../common/resumeData.json';
-import { descriptionObject } from '../common/types';
+import { resumeDescriptionObject } from '../common/types';
 
-const skillsToResumeMap = (skillText:string): Array<descriptionObject> => {
-    let flatDescriptionArray: Array<descriptionObject> = [];
+const skillsToResumeMap = (skillText:string): Array<resumeDescriptionObject> => {
+    let flatDescriptionArray: Array<resumeDescriptionObject> = [];
     resumeData.work.forEach((resumeItem) => flatDescriptionArray.push(...resumeItem.description));
 
     const filteredArray = flatDescriptionArray.filter((description) => {

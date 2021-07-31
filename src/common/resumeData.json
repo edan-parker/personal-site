@@ -5,11 +5,11 @@
             "jobRole": "Applied Math Engineering",
             "description": [
                 {
-                    "text": "Algorithms, data structures, operating systems and embedded systems",
+                    "text": "CS courses include algorithms, data structures, operating systems and embedded systems",
                     "id": "queens_algo"
                 },
                 {
-                    "text": "Linear algebra, stochastics, analysis, control theory",
+                    "text": "Math courses include linear algebra, stochastics, analysis, control theory",
                     "id": "queens_math"
                 }
             ],

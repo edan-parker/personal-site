@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { descriptionObject } from '../../common/types';
+import { resumeDescriptionObject } from '../../common/types';
 
 interface IProps {
     logo: string,
@@ -7,7 +7,7 @@ interface IProps {
     jobRole: string,
     startDate: string,
     endDate: string,
-    description: Array<descriptionObject>,
+    description: Array<resumeDescriptionObject>,
 }
 
 const ResumeItem = (props: IProps) => {

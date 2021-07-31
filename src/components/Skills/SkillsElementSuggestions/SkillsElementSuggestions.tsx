@@ -1,4 +1,4 @@
-import { descriptionObject } from '../../../common/types';
+import { resumeDescriptionObject } from '../../../common/types';
 import SkillsElementSuggestionRow from './SkillsElementSuggestionRow';
 import skillsToResumeMap from '../../../utils/skillsToResumeMap';
 import './SkillsElementSuggestions.scss';
@@ -10,7 +10,7 @@ interface IProps {
 
 const SkillsElementSuggestions = (props: IProps) => {
     const { keys, setTooltipActiveState } = props;
-    let resumeElements: Array<descriptionObject> = [];
+    let resumeElements: Array<resumeDescriptionObject> = [];
 
     keys.forEach((key) => resumeElements.push(...skillsToResumeMap(key)));
 
