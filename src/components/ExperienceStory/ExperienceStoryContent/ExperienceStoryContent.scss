@@ -1,0 +1,16 @@
+.content-row {
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    border: 2px solid black;
+    border-top: 0;
+
+    .sub-item {
+        margin-top: 10px;
+
+        .text{
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 20pt;
+        }
+    }
+}

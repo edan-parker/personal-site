@@ -3,7 +3,7 @@ import experienceStoryData from '../../common/experienceStoryData.json';
 
 const ExperienceStories = () => {
     return (
-        <div className={'experience-stories'}>
+        <>
             <div className={'section-header'}>
                 <h2>Experience Stories</h2>
             </div>
@@ -14,7 +14,7 @@ const ExperienceStories = () => {
                     content={story.content}
                 />
             ))}
-        </div>
+        </>
     )
 }
 
