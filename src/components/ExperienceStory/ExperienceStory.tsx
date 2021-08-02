@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { experienceStoryContent } from '../../common/types';
+import { useMediaQuery } from 'react-responsive'
 import './ExperienceStory.scss';
 import ExperienceStoryContentRow from './ExperienceStoryContent/ExperienceStoryContentRow';
+import ExperienceStoryContentModal from './ExperienceStoryContent/ExperienceStoryContentModal';
 
 interface IProps {
     storyTitle: string 
@@ -10,12 +12,20 @@ interface IProps {
 
 const ExperienceStory = (props: IProps) => {
     const { storyTitle, content} = props;
-
     const [showStory, setShowStory] = useState(false);
+    const isMobile = useMediaQuery({ query: '(max-width: 599px)' });
 
     const changeExpandedState = () => {
         setShowStory(!showStory);
     }
+
+    const contentComponent = isMobile ?  (
+    <ExperienceStoryContentModal content={content} handleClose={changeExpandedState} storyTitle={storyTitle}/>
+    ) : (
+        <ExperienceStoryContentRow content={content}/>
+    )
+
+    //document.body.style.overflow = isMobile && showStory ? 'hidden' : 'unset';
 
     return (
         <>
@@ -26,7 +36,7 @@ const ExperienceStory = (props: IProps) => {
                 </div>
             </div>
             { showStory ? 
-                <ExperienceStoryContentRow content={content}/>
+                contentComponent
             : null}
         </>
     );

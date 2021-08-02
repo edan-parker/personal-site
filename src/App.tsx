@@ -7,7 +7,7 @@ import ExperienceStories from './components/ExperienceStory';
 
 function App() {
   return (
-    <div  className={'main-site'}>
+    <div className={'main-site'}>
       <Bio />
       <Skills />
       <ExperienceStories />

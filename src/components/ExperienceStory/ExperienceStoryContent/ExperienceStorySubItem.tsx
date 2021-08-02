@@ -10,7 +10,7 @@ const ExperienceStorySubItem = (props: IProps) => {
 
     return (
         <div className={'sub-item'}>
-            <h3 className={'title'}>{type}</h3>
+            <h2 className={'title'}>{type}</h2>
             <div className={'text'}>
                 {text}
             </div>
