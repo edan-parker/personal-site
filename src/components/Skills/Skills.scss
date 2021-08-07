@@ -1,30 +1,30 @@
 .skills {
-    padding: 10px 15px 10px 15px;
-    border: 2px solid black;
-    border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
 
-    legend {
-        font-size: 20px;
-        padding: 0px 10px 0px 10px;
-    }
+  legend {
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+  }
 
-    .skills-button {
-        padding: 5px 10px 5px 10px;
-        font-size: 16px;
-        border-radius: 8px;
-        margin: 5px;
-        box-shadow: 0 5px #999;
-        transition: all .1s ease-in-out;
-    }
+  .skills-button {
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0 5px #999;
+    transition: all 0.1s ease-in-out;
+  }
 
-    .skills-button:hover {
-        color: #687ea5;
-        cursor: pointer;
-        transform: scale(1.1);
-    }
+  .skills-button:hover {
+    color: #687ea5;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 
-    .skills-button:active {
-        box-shadow: 0 2px #999;
-        transform: translateY(2px);
-    }
+  .skills-button:active {
+    box-shadow: 0 2px #999;
+    transform: translateY(2px);
+  }
 }

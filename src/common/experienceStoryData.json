@@ -1,10 +1,10 @@
 [
-    {
-        "storyTitle": "Flakey Tests",
-        "content": {
-            "problem": "The shared front-end service used the Apollo GraphQL client to make requests. In unit tests, these requests needed to be mocked so that the Promise will resolve and that the fake data from the response can be used in the component. When these were not mocked, the Promise would non-deterministically reject if given enough time, resulting in random test failures.",
-            "solution": "A coworker and I created a strict wrapper component which provided fine-tuned control error handling and more context. Implementing this tool enabled reliable reporting of unmocked requests and context including the expected variables as well as where in the component the request is made. Additionally, I implemented a linter which enforced the use of this wrapper.",
-            "result": "The switch to using our tool across the front-end was made and was able to identify hundreds of occurences of unmocked requests. The work to add mocks was distributed amongst codeowners. Best practices were also defined and aforementioned linter was turned out to prevented this happening again."
-        }
+  {
+    "storyTitle": "Flakey Tests",
+    "content": {
+      "problem": "The shared front-end service used the Apollo GraphQL client to make requests. In unit tests, these requests needed to be mocked so that the Promise will resolve and that the fake data from the response can be used in the component. When these were not mocked, the Promise would non-deterministically reject if given enough time, resulting in random test failures.",
+      "solution": "A coworker and I created a strict wrapper component which provided fine-tuned control error handling and more context. Implementing this tool enabled reliable reporting of unmocked requests and context including the expected variables as well as where in the component the request is made. Additionally, I implemented a linter which enforced the use of this wrapper.",
+      "result": "The switch to using our tool across the front-end was made and was able to identify hundreds of occurences of unmocked requests. The work to add mocks was distributed amongst codeowners. Best practices were also defined and aforementioned linter was turned out to prevented this happening again."
     }
+  }
 ]
