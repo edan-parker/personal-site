@@ -16,7 +16,6 @@
     "font-awesome": "^4.7.0",
     "gh-pages": "^3.2.3",
     "node-sass": "4.14.1",
-    "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive": "^9.0.0-beta.3",
@@ -31,7 +30,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prettier": "prettier '**/*.{js,ts,jsx,tsx,md,scss,css,json}'",
+    "prettify": "yarn prettier --write"
   },
   "eslintConfig": {
     "extends": [
@@ -50,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
   }
 }

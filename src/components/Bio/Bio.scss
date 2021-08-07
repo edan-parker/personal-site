@@ -1,107 +1,107 @@
 .bio-container {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+
+  .bio {
+    width: 50%;
+    height: 50%;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+
+    .icon-set {
+      margin: 10px 100px 0px 0px;
+      display: flex;
+
+      .icon-element {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+
+        .icon-text {
+          margin-top: 5px;
+        }
+      }
+
+      .icon-element:hover {
+        color: #646262;
+        cursor: pointer;
+      }
+    }
+
+    .bio-text {
+      margin-top: 20px;
+      margin-right: 40px;
+      font-size: 20px;
+      line-height: 20pt;
+
+      .text-link:hover {
+        color: #646262;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pic-of-me {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 999px) {
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     .bio {
-        width: 50%;
-        height: 50%;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 20px;
 
-        h1 {
-            font-size: 60px;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
+      .icon-set {
+        margin: 10px 50px 0px 50px;
+      }
 
-        h2 {
-            font-size: 36px;
-            font-weight: 400;
-            margin-bottom: 40px;
-        }
-
-        .icon-set {
-            margin: 10px 100px 0px 0px;
-            display: flex;
-
-            .icon-element {
-                color: black;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 33%;
-
-                .icon-text {
-                    margin-top: 5px;
-                }
-            }
-
-            .icon-element:hover {
-                color: #646262;
-                cursor: pointer;
-            }
-        }
-
-        .bio-text {
-            margin-top: 20px;
-            margin-right: 40px;
-            font-size: 20px;
-            line-height: 20pt;
-
-            .text-link:hover {
-                color: #646262;
-                cursor: pointer;
-            }
-        }
+      .bio-text {
+        margin-left: 40px;
+      }
     }
 
     .pic-of-me {
-        width: 50%;
-        height: 50%;
-        border-radius: 20px;
+      height: 80%;
+      width: 80%;
     }
+  }
 }
 
-@media(max-width: 999px) {
-    .bio-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+@media (max-width: 599px) {
+  .bio-container {
+    .bio {
+      h1 {
+        font-size: 45px;
+      }
 
-        .bio {
-            height: 100%;
-            width: 100%;
-            margin-bottom: 20px;
+      h2 {
+        font-size: 25px;
+      }
 
-            .icon-set {
-                margin: 10px 50px 0px 50px;
-            }
-
-            .bio-text {
-                margin-left: 40px;
-            }
-        }
-
-        .pic-of-me {
-            height: 80%;
-            width: 80%;
-        }
+      .icon-set {
+        margin: 10px 20px 0px 20px;
+      }
     }
-}
-
-@media(max-width: 599px) {
-    .bio-container {
-        .bio {
-            h1 {
-                font-size: 45px;
-            }
-
-            h2 {
-                font-size: 25px
-            }
-
-            .icon-set {
-                margin: 10px 20px 0px 20px;
-            }
-        }
-    }
+  }
 }
