@@ -1,17 +1,16 @@
-import { ExperienceStoryTypes, lateralDirection } from "../../common/constants";
+import { ExperienceStoryTypes } from "../../../common/constants";
 
 interface IProps {
-    alignment: lateralDirection,
     text: string,
     type: ExperienceStoryTypes,
 }
 
 const ExperienceStorySubItem = (props: IProps) => {
-    const {alignment, text, type} = props;
-    console.log(alignment)
+    const {text, type} = props;
+
     return (
-        <div className={"sub-item " + alignment}>
-            <h2>{type}</h2>
+        <div className={'sub-item'}>
+            <h2 className={'title'}>{type}</h2>
             <div className={'text'}>
                 {text}
             </div>

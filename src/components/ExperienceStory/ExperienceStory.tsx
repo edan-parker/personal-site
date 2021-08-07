@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { ExperienceStoryTypes, lateralDirection } from '../../common/constants';
 import { experienceStoryContent } from '../../common/types';
+import { useMediaQuery } from 'react-responsive'
 import './ExperienceStory.scss';
-import ExperienceStorySubItem from './ExperienceStorySubItem';
+import ExperienceStoryContentRow from './ExperienceStoryContent/ExperienceStoryContentRow';
+import ExperienceStoryContentModal from './ExperienceStoryContent/ExperienceStoryContentModal';
 
 interface IProps {
     storyTitle: string 
@@ -12,55 +13,32 @@ interface IProps {
 const ExperienceStory = (props: IProps) => {
     const { storyTitle, content} = props;
     const [showStory, setShowStory] = useState(false);
-    const id = 'story-' + storyTitle.toLowerCase().replace(' ', '-');
-
-    const storyTitleHeader = <h1>{storyTitle}</h1>;
+    const isMobile = useMediaQuery({ query: '(max-width: 599px)' });
 
     const changeExpandedState = () => {
         setShowStory(!showStory);
-        const el = document.getElementById(id);
-        if (el) {
-            el.scrollIntoView({behavior: "smooth"});
-        }
     }
 
-    const openState = 'fa fa-angle-' + 
-        (showStory ? 'up' : 'down') +
-        ' fa-2x ' +
-        'open-state-icon-' + 
-        (showStory ? 'collapse' : 'expand');
-    
+    const contentComponent = isMobile ?  (
+    <ExperienceStoryContentModal content={content} handleClose={changeExpandedState} storyTitle={storyTitle}/>
+    ) : (
+        <ExperienceStoryContentRow content={content}/>
+    )
+
+    //document.body.style.overflow = isMobile && showStory ? 'hidden' : 'unset';
 
     return (
-        <div className={'experience-story-container'}>
-            <div id={id} className={'experience-story ' + (showStory ? 'expanded' : 'collapsed')}>
-                { showStory ? 
-                    <>
-                        {storyTitleHeader}
-                        <ExperienceStorySubItem
-                            alignment={lateralDirection.LEFT}
-                            text={content.problem}
-                            type={ExperienceStoryTypes.PROBLEM}
-                        />
-                        <ExperienceStorySubItem
-                            alignment={lateralDirection.RIGHT}
-                            text={content.solution}
-                            type={ExperienceStoryTypes.SOLUTION}
-                        />
-                        <ExperienceStorySubItem
-                            alignment={lateralDirection.LEFT}
-                            text={content.result}
-                            type={ExperienceStoryTypes.RESULT}
-                        />
-                    </>
-                : null}
-                <div className={'open-state'} onClick={changeExpandedState}>
-                    <i className={openState}/>
-                    {!showStory ? storyTitleHeader : null}
-                    <i className={openState}/>
+        <>
+            <div className={'experience-story-button' + (showStory ? ' open' : '')} onClick={changeExpandedState}>
+                <h3>{storyTitle}</h3>
+                <div className={(showStory ? 'up' : 'down')}>
+                    <i className={'fa fa-2x fa-angle-' + (showStory ? 'up' : 'down')}/>
                 </div>
             </div>
-        </div>
+            { showStory ? 
+                contentComponent
+            : null}
+        </>
     );
 };
 
