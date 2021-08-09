@@ -1,12 +1,16 @@
 interface IProps {
   skillText: string;
-  keys?: Array<string>;
+  handleSkillClick: () => void;
 }
 
 const SkillsElement = (props: IProps) => {
-  const { skillText } = props;
+  const { skillText, handleSkillClick } = props;
 
-  return <button className={"skills-button"}>{skillText}</button>;
+  return (
+    <button className={"skills-button"} onClick={handleSkillClick}>
+      {skillText}
+    </button>
+  );
 };
 
 export default SkillsElement;

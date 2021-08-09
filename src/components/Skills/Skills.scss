@@ -17,7 +17,7 @@
     transition: all 0.1s ease-in-out;
   }
 
-  /* .skills-button:hover {
+  .skills-button:hover {
     color: #687ea5;
     cursor: pointer;
     transform: scale(1.1);
@@ -26,5 +26,10 @@
   .skills-button:active {
     box-shadow: 0 2px #999;
     transform: translateY(2px);
-  }*/
+  }
+}
+
+.skills-modal-content {
+  margin: 10px;
+  text-align: center;
 }
