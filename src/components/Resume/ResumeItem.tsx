@@ -22,7 +22,9 @@ const ResumeItem = (props: IProps) => {
       </div>
       <ul className={"description"}>
         {description.map((bullet, idx) => (
-          <li key={idx}>{bullet}</li>
+          <li key={idx}>
+            {bullet}
+          </li>
         ))}
       </ul>
     </div>
