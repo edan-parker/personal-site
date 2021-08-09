@@ -16,13 +16,13 @@
       "companyName": "Wave",
       "jobRole": "Software Coop",
       "description": [
-        "Created customer-facing features with ReactJS functional components",
-        "Worked with Rest and GraphQL APIs, using the Apollo client to fetch data",
-        "Used RPC endpoints for cross-service communication",
-        "Server-side code with Django and typed Python",
-        "Test driven development with Jest in the frontend and Pytest in the backend",
-        "Distributed computing with SQS message queues",
-        "Logging and tracing using sentry, datadogs and sumologic"
+        "Developed features for the accounting platform of Wave using ReactJS that reached 100,000+ monthly users",
+        "Created logs and dashboards for Datadog and Sumo Logic to track and monitor releases",
+        "Co-designed a tool that surfaced unmocked GraphQL requests in unit tests which identified hundreds of broken tests",
+        "Developed infrastructure for an internal ML package that auto-merged duplicate transactions, resulting in thousands of merges per month",
+        "Built code in all aspects of micro-service architecture including front-end ReactJS, backend Python/Django, Rest APIs, GraphQL resolvers, RPC functions and Protobuff schema",
+        "Advocated for and applied multiple linters, improving code quality and uniformity",
+        "Wrote hundreds of unit tests for frontend and backend code for features that I worked on"
       ],
       "startDate": "05/2021",
       "endDate": "08/2021"
@@ -31,11 +31,11 @@
       "companyName": "Calian",
       "jobRole": "Junior Software Engineer",
       "description": [
-        "Designed robust client-side features in ExtJS",
-        "Wrote multiple Rest API routes using PHP, working with MySQL and Propel ORM",
+        "Worked on the MaestroEDE training tool, used by various departments in the Canadian military",
+        "Developed features to meet NATO requirements, expanding the client base of the tool to all NATO countries",
+        "Created infrastructure for localization, increasing customer base potential to non English speaking countries",
         "Improved batch HTTP request handling time by 60% by restructuring notification handling and optimizing Javascript code",
-        "Wrote unit tests with Postman and Integration Tests with Sencha Test, and integrated these into the Gitlab CI pipeline",
-        "Created micro-services with Docker containers and managed Docker in Gitlab runners"
+        "Spearheaded an integration testing initiative which aimed to cut QA spending and time in half upon completion"
       ],
       "startDate": "05/2020",
       "endDate": "04/2021"
@@ -44,11 +44,10 @@
       "companyName": "RMC",
       "jobRole": "Junior Software Engineer",
       "description": [
-        "Worked with both C#.NET and VB.NET to modify an existing program, and develop new assets and adapting program to C#",
-        "The role was efficiency-oriented, aiming to minimize redundancies, abstracting shared programs into dlls, diminishing leakage, and increasing overall security",
-        "Implemented objected oriented/polymorphic practices, writing solid, testable code that used generics, reflection, and encapsulation",
-        "Wrote unit tests with Postman and Integration Tests with Sencha Test, and integrated these into the Gitlab CI pipeline",
-        "Created and worked with a SQLite embedded database"
+        "Worked on a structural analysis suite of programs for bridges in military applications",
+        " Focused on consolidating redundant code, converting Visual Basic code to C#",
+        "Separated code for data access and modifications from computations and UI",
+        "Updated data storage method from text files to a relational database, benefitting data integrity"
       ],
       "startDate": "05/2019",
       "endDate": "08/2019"
