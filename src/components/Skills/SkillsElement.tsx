@@ -1,27 +1,12 @@
-import Tooltip from "../Tooltip";
-import SkillsElementSuggestions from "./SkillsElementSuggestions/SkillsElementSuggestions";
-
 interface IProps {
   skillText: string;
   keys?: Array<string>;
 }
 
 const SkillsElement = (props: IProps) => {
-  const { skillText, keys } = props;
+  const { skillText } = props;
 
-  const skillKeys: Array<string> = keys ? keys : [skillText];
-  const skillsContent = (
-    <SkillsElementSuggestions
-      keys={skillKeys}
-      setTooltipActiveState={() => {}}
-    />
-  );
-
-  return (
-    <Tooltip content={skillsContent}>
-      <button className={"skills-button"}>{skillText}</button>
-    </Tooltip>
-  );
+  return <button className={"skills-button"}>{skillText}</button>;
 };
 
 export default SkillsElement;

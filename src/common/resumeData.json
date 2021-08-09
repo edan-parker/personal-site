@@ -4,14 +4,8 @@
       "companyName": "Queen's University",
       "jobRole": "Applied Math Engineering",
       "description": [
-        {
-          "text": "CS courses include algorithms, data structures, operating systems and embedded systems",
-          "id": "queens_algo"
-        },
-        {
-          "text": "Math courses include linear algebra, stochastics, analysis, control theory",
-          "id": "queens_math"
-        }
+        "CS courses include algorithms, data structures, operating systems and embedded systems",
+        "Math courses include linear algebra, stochastics, analysis, control theory"
       ],
       "startDate": "09/2017",
       "endDate": "04/2022"
@@ -22,34 +16,13 @@
       "companyName": "Wave",
       "jobRole": "Software Coop",
       "description": [
-        {
-          "text": "Created customer-facing features with ReactJS functional components",
-          "id": "wave_react"
-        },
-        {
-          "text": "Worked with Rest and GraphQL APIs, using the Apollo client to fetch data",
-          "id": "wave_rest_graphql"
-        },
-        {
-          "text": "Used RPC endpoints for cross-service communication",
-          "id": "wave_rpc"
-        },
-        {
-          "text": "Server-side code with Django and typed Python",
-          "id": "wave_django_python"
-        },
-        {
-          "text": "Test driven development with Jest in the frontend and Pytest in the backend",
-          "id": "wave_tdd"
-        },
-        {
-          "text": "Distributed computing with SQS message queues",
-          "id": "wave_sqs"
-        },
-        {
-          "text": "Logging and tracing using sentry, datadogs and sumologic",
-          "id": "wave_observability"
-        }
+        "Created customer-facing features with ReactJS functional components",
+        "Worked with Rest and GraphQL APIs, using the Apollo client to fetch data",
+        "Used RPC endpoints for cross-service communication",
+        "Server-side code with Django and typed Python",
+        "Test driven development with Jest in the frontend and Pytest in the backend",
+        "Distributed computing with SQS message queues",
+        "Logging and tracing using sentry, datadogs and sumologic"
       ],
       "startDate": "05/2021",
       "endDate": "08/2021"
@@ -58,26 +31,11 @@
       "companyName": "Calian",
       "jobRole": "Junior Software Engineer",
       "description": [
-        {
-          "text": "Designed robust client-side features in ExtJS",
-          "id": "calian_extjs"
-        },
-        {
-          "text": "Wrote multiple Rest API routes using PHP, working with MySQL and Propel ORM",
-          "id": "calian_php"
-        },
-        {
-          "text": "Improved batch HTTP request handling time by 60% by restructuring notification handling and optimizing Javascript code",
-          "id": "calian_http"
-        },
-        {
-          "text": "Wrote unit tests with Postman and Integration Tests with Sencha Test, and integrated these into the Gitlab CI pipeline",
-          "id": "calian_test"
-        },
-        {
-          "text": "Created micro-services with Docker containers and managed Docker in Gitlab runners",
-          "id": "calian_docker"
-        }
+        "Designed robust client-side features in ExtJS",
+        "Wrote multiple Rest API routes using PHP, working with MySQL and Propel ORM",
+        "Improved batch HTTP request handling time by 60% by restructuring notification handling and optimizing Javascript code",
+        "Wrote unit tests with Postman and Integration Tests with Sencha Test, and integrated these into the Gitlab CI pipeline",
+        "Created micro-services with Docker containers and managed Docker in Gitlab runners"
       ],
       "startDate": "05/2020",
       "endDate": "04/2021"
@@ -86,26 +44,11 @@
       "companyName": "RMC",
       "jobRole": "Junior Software Engineer",
       "description": [
-        {
-          "text": "Worked with both C#.NET and VB.NET to modify an existing program, and develop new assets and adapting program to C#",
-          "id": "rmc_c#"
-        },
-        {
-          "text": "The role was efficiency-oriented, aiming to minimize redundancies, abstracting shared programs into dlls, diminishing leakage, and increasing overall security",
-          "id": "rmc_abstraction"
-        },
-        {
-          "text": "Implemented objected oriented/polymorphic practices, writing solid, testable code that used generics, reflection, and encapsulation",
-          "id": "rmc_oop"
-        },
-        {
-          "text": "Wrote unit tests with Postman and Integration Tests with Sencha Test, and integrated these into the Gitlab CI pipeline",
-          "id": "calian_test"
-        },
-        {
-          "text": "Created and worked with a SQLite embedded database",
-          "id": "rmc_sqlite"
-        }
+        "Worked with both C#.NET and VB.NET to modify an existing program, and develop new assets and adapting program to C#",
+        "The role was efficiency-oriented, aiming to minimize redundancies, abstracting shared programs into dlls, diminishing leakage, and increasing overall security",
+        "Implemented objected oriented/polymorphic practices, writing solid, testable code that used generics, reflection, and encapsulation",
+        "Wrote unit tests with Postman and Integration Tests with Sencha Test, and integrated these into the Gitlab CI pipeline",
+        "Created and worked with a SQLite embedded database"
       ],
       "startDate": "05/2019",
       "endDate": "08/2019"

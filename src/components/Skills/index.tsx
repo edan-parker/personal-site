@@ -8,14 +8,11 @@ const Skills = () => {
       <SkillsElement skillText={"ReactJS"} />
       <SkillsElement skillText={"GraphQL"} />
       <SkillsElement skillText={"Python"} />
-      <SkillsElement
-        skillText={"Javascript"}
-        keys={["Javascript", "ExtJS", "ReactJS"]}
-      />
+      <SkillsElement skillText={"Javascript"} />
       <SkillsElement skillText={"ExtJS"} />
       <SkillsElement skillText={"Docker"} />
-      <SkillsElement skillText={"Testing"} keys={["Test"]} />
-      <SkillsElement skillText={"Observability"} keys={["Logging"]} />
+      <SkillsElement skillText={"Testing"} />
+      <SkillsElement skillText={"Observability"} />
     </fieldset>
   );
 };

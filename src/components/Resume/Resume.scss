@@ -47,18 +47,5 @@
     li {
       margin-bottom: 10px;
     }
-
-    @keyframes highlight {
-      0% {
-        color: red;
-      }
-      100% {
-        color: none;
-      }
-    }
-
-    .highlight {
-      animation: highlight 3s;
-    }
   }
 }
