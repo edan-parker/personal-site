@@ -7,10 +7,11 @@ interface IProps {
   children: Array<JSX.Element>;
   handleClose: () => void;
   title: string;
+  small?: boolean;
 }
 
 const ModalWithCarousel = (props: IProps) => {
-  const { children, handleClose, title } = props;
+  const { children, handleClose, title, small } = props;
 
   const modalContentRef = useRef<HTMLDivElement>(null);
 
@@ -21,7 +22,7 @@ const ModalWithCarousel = (props: IProps) => {
         handleClose();
       }
     };
-    
+
     document.addEventListener("mousedown", handleClick);
 
     return () => {
@@ -32,7 +33,7 @@ const ModalWithCarousel = (props: IProps) => {
   useEffect(() => {
     disableBodyScroll(modalContentRef);
 
-    return () => enableBodyScroll(modalContentRef)
+    return () => enableBodyScroll(modalContentRef);
   }, [modalContentRef]);
 
   return (
@@ -45,7 +46,7 @@ const ModalWithCarousel = (props: IProps) => {
             onClick={handleClose}
           />
         </div>
-        <Carousel>{children}</Carousel>
+        <Carousel smallContent={small || false}>{children}</Carousel>
       </div>
     </div>
   );

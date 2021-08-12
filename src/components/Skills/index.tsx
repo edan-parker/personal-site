@@ -1,52 +1,27 @@
 import skillsData from "../../common/skillsData.json";
-import SkillsElement from "./SkillsElement";
 import "./Skills.scss";
-import ModalWithCarousel from "../ModalWithCarousel";
-import { useState } from "react";
+import SkillsFS from "./SkillsFS";
 
 const Skills = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [skillsModalList, setSkillsModalList] = useState(
-    JSON.parse(JSON.stringify(skillsData))
-  );
+  const skillGroups: any = [];
+  let skillGroup: any = [];
+  for (let i = 0; i < skillsData.length; i++) {
+    skillGroup.push(skillsData[i]);
+    if (i % 2 !== 0) {
+      skillGroups.push(skillGroup);
+      skillGroup = [];
+    }
+  }
 
   return (
     <>
-      <fieldset className={"skills"}>
-        <legend>Skills</legend>
-        {skillsData.map((skill) => {
-          const onSkillClick = () => {
-            setShowModal(!showModal);
-            let skillList = skillsModalList;
-            while (skillList[0].name !== skill.name) {
-              skillList.push(skillList.shift()!);
-            }
-            setSkillsModalList(skillList);
-          };
-
-          return (
-            <SkillsElement
-              skillText={skill.name}
-              handleSkillClick={onSkillClick}
-            />
-          );
-        })}
-      </fieldset>
-      {showModal && (
-        <ModalWithCarousel
-          title="Skills"
-          handleClose={() => setShowModal(!showModal)}
-        >
-          {skillsModalList.map((skill) => {
-            return (
-              <div className={"skills-modal-content"}>
-                <h1>{skill.name}</h1>
-                {skill.description}
-              </div>
-            );
-          })}
-        </ModalWithCarousel>
-      )}
+      {skillGroups.map((group) => (
+        <div className={"skill-group"}>
+          <SkillsFS fieldSetName={group[0].name} skillsData={group[0].data} />
+          <span className={"skill-separator"} />
+          <SkillsFS fieldSetName={group[1].name} skillsData={group[1].data} />
+        </div>
+      ))}
     </>
   );
 };

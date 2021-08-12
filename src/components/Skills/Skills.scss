@@ -1,35 +1,60 @@
-.skills {
-  padding: 10px 15px 10px 15px;
-  border: 2px solid black;
-  border-radius: 10px;
+.skill-group {
+  display: flex;
 
-  legend {
-    font-size: 20px;
-    padding: 0px 10px 0px 10px;
+  .skill-separator {
+    margin: 0px 10px 0px 10px;
   }
 
-  .skills-button {
-    padding: 5px 10px 5px 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    margin: 5px;
-    box-shadow: 0 3px #999;
-    transition: all 0.1s ease-in-out;
-  }
+  .skills {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
 
-  .skills-button:hover {
-    color: #687ea5;
-    cursor: pointer;
-    transform: scale(1.1);
-  }
+    legend {
+      font-size: 20px;
+      padding: 0px 10px 0px 10px;
+    }
 
-  .skills-button:active {
-    box-shadow: 0 2px #999;
-    transform: translateY(2px);
+    .skills-button {
+      padding: 5px 10px 5px 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      margin: 5px;
+      box-shadow: 0 3px #999;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .skills-button:hover {
+      color: #687ea5;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    .skills-button:active {
+      box-shadow: 0 2px #999;
+      transform: translateY(2px);
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .skill-group {
+    flex-direction: column;
+
+    .skills {
+      width: auto;
+    }
   }
 }
 
 .skills-modal-content {
   margin: 10px;
   text-align: center;
+
+  .skills-modal-text {
+    font-size: 20px;
+    line-height: 20pt;
+  }
 }

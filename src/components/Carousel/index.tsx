@@ -3,10 +3,11 @@ import "./Carousel.scss";
 
 interface IProps {
   children: Array<JSX.Element>;
+  smallContent: boolean;
 }
 
 const Carousel = (props: IProps) => {
-  const { children } = props;
+  const { children, smallContent } = props;
 
   const [index, setIndex] = useState(0);
 
@@ -33,7 +34,9 @@ const Carousel = (props: IProps) => {
           className={"fa fa-chevron-circle-left fa-2x arrow"}
           onClick={decrementSafely}
         />
-        {children[index]}
+        <div className={smallContent ? "small-content" : ""}>
+          {children[index]}
+        </div>
         <i
           className={"fa fa-chevron-circle-right fa-2x arrow"}
           onClick={incrementSafely}
