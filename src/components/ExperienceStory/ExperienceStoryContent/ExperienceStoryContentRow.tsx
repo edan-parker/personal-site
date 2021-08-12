@@ -13,7 +13,7 @@ const ExperienceStoryContentRow = (props: IProps) => {
 
   return (
     <div className={"content-row"}>
-      <Carousel>
+      <Carousel smallContent={false}>
         <ExperienceStorySubItem
           text={content.problem}
           type={ExperienceStoryTypes.PROBLEM}

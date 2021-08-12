@@ -3,10 +3,11 @@ import "./Carousel.scss";
 
 interface IProps {
   children: Array<JSX.Element>;
+  smallContent: boolean;
 }
 
 const Carousel = (props: IProps) => {
-  const { children } = props;
+  const { children, smallContent } = props;
 
   const [index, setIndex] = useState(0);
 
@@ -26,13 +27,6 @@ const Carousel = (props: IProps) => {
     }
   };
 
-  let navButtons: Array<JSX.Element> = [];
-  for (let i = 0; i < children.length; i++) {
-    const className = "fa fa-2x button fa-circle" + (index === i ? "" : "-o");
-    const navBtnHandler = () => setIndex(i);
-    navButtons.push(<i className={className} onClick={navBtnHandler} />);
-  }
-
   return (
     <div className={"carousel-container"}>
       <div className={"main-row"}>
@@ -40,13 +34,14 @@ const Carousel = (props: IProps) => {
           className={"fa fa-chevron-circle-left fa-2x arrow"}
           onClick={decrementSafely}
         />
-        {children[index]}
+        <div className={smallContent ? "small-content" : ""}>
+          {children[index]}
+        </div>
         <i
           className={"fa fa-chevron-circle-right fa-2x arrow"}
           onClick={incrementSafely}
         />
       </div>
-      <div className={"nav-buttons"}>{navButtons}</div>
     </div>
   );
 };

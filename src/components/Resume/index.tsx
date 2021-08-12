@@ -18,10 +18,10 @@ const Resume = () => {
   return (
     <div className={"resume"}>
       <div className={"section-header"}>
-        <h2>School</h2>
+        <h2>Work</h2>
       </div>
       <hr className={"divider"} />
-      {resumeData.education.map((resumeItem) => {
+      {resumeData.work.map((resumeItem) => {
         return (
           <ResumeItem
             logo={logoMap[resumeItem.companyName]}
@@ -34,10 +34,10 @@ const Resume = () => {
         );
       })}
       <div className={"section-header"}>
-        <h2>Work</h2>
+        <h2>School</h2>
       </div>
       <hr className={"divider"} />
-      {resumeData.work.map((resumeItem) => {
+      {resumeData.education.map((resumeItem) => {
         return (
           <ResumeItem
             logo={logoMap[resumeItem.companyName]}

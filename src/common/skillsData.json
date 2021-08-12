@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Languages",
+    "data": [
+      {
+        "name": "Javascript",
+        "description": "I have nearly 2 years of experience working with JS, and am strong in ES6 syntax."
+      },
+      {
+        "name": "Python",
+        "description": "I am solid in Python, have been using it for server-side code at my Wave coop, as well as in interview prep"
+      },
+      {
+        "name": "PHP",
+        "description": "I have used server side PHP and in Wordpress customization. It's a nice language and I enjoy working with it."
+      },
+      {
+        "name": "C#",
+        "description": "I group C# and Java in the same OOP bucket. I grew up learning these languages and they'll always have my heart, but I am a bit rusty with them."
+      }
+    ]
+  },
+  {
+    "name": "Frameworks",
+    "data": [
+      {
+        "name": "ReactJS",
+        "description": "I have been using ReactJS for a few months but feel that I have a really good grasp. I've used functional components with hooks, and have watched lots of talks about how it renders internally, to gain a deeper understanding."
+      },
+      {
+        "name": "Django",
+        "description": "I've used Django for server-side logic at my Wave coop. Using typed Python 3.X, I really have come to respect it as a versatile backend framework. We used the CQRS event sourcing pattern, which I'm a big fan of."
+      },
+      {
+        "name": "Laravel",
+        "description": "I worked with Laravel and PropelORM at my Calian coop, and got quite solid with this. PHP is a multi-purpose language that is powerful when weilded correctly in this environment."
+      },
+      {
+        "name": "ExtJS",
+        "description": "ExtJS is a lesser known frontend framework that I used at my Calian coop. It uses MVC architecture, which may not be cutting edge anymore, but still taught me important patterns and optimizations."
+      }
+    ]
+  },
+  {
+    "name": "Data Exchange",
+    "data": [
+      {
+        "name": "REST",
+        "description": "I am quite experienced with REST. I've had the opportunity to dig deep into the networking, exploring batching and optimizations."
+      },
+      {
+        "name": "GraphQL",
+        "description": "GraphQL is really cool and I've gotten to use it a bunch. I've written resolvers for queries, and defined schema as well as tests."
+      },
+      {
+        "name": "gRPC",
+        "description": "gRPC is a super neat way method of data exchange that I've gotten to use during my time at Wave. It gives predictable results and nice standardizations."
+      },
+      {
+        "name": "Protobuf",
+        "description": "Using gRPC necessitates pb, so I've gotten the opportunity to define plenty of messages, mappers and transformers."
+      }
+    ]
+  },
+  {
+    "name": "Tools",
+    "data": [
+      {
+        "name": "Docker",
+        "description": "I've used Docker to create my own microservices, as well as manage orchestration of an ecosystem of services with docker-compose."
+      },
+      {
+        "name": "Logging",
+        "description": "This is newer to me, but I've been able to build out Datadog dashboards, trace bugs with Sentry and debug problems with Sumo Logic."
+      },
+      {
+        "name": "Testing",
+        "description": "I have spent a lot of time testing different frameworks, be it Jest for React, Pytest for Django, SenchaTest (built on Jasmine) for ExtJS. "
+      },
+      {
+        "name": "CD/CI",
+        "description": "On the CD front: I've found my way around Jenkins for deploymments, and CircleCI for creating various testing steps in pipelines. I've also used Gitlab CI, which is quite similar to Circle."
+      }
+    ]
+  }
+]
