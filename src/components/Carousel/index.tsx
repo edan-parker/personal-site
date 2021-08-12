@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./Carousel.scss";
 
 interface IProps {
@@ -11,21 +11,37 @@ const Carousel = (props: IProps) => {
 
   const [index, setIndex] = useState(0);
 
-  const decrementSafely = () => {
+  const decrementSafely = useCallback(() => {
     if (index > 0) {
       setIndex(index - 1);
     } else {
       setIndex(children.length - 1);
     }
-  };
+  }, [children.length, index]);
 
-  const incrementSafely = () => {
+  const incrementSafely = useCallback(() => {
     if (index < children.length - 1) {
       setIndex(index + 1);
     } else {
       setIndex(0);
     }
-  };
+  }, [children.length, index]);
+
+  useEffect(() => {
+    const handleKeyEvent = (e) => {
+      if (e.keyCode === 37) {
+        decrementSafely();
+      } else if (e.keyCode === 39) {
+        incrementSafely();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyEvent);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyEvent);
+    };
+  }, [incrementSafely, decrementSafely]);
 
   return (
     <div className={"carousel-container"}>
