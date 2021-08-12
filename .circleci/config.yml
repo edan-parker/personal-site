@@ -3,7 +3,6 @@ version: 2.1
 orbs:
   node: circleci/node@4.1
 
-
 jobs:
   prettier:
     docker:
@@ -13,3 +12,8 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn prettier --check
+
+workflows:
+  tests: 
+    jobs:
+      - prettier
