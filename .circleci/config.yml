@@ -3,18 +3,14 @@ version: 2.1
 orbs:
   node: circleci/node@4.1
 
-
-jobs:
-  prettier:
-    docker:
-      - image: cimg/node:15.1
-    steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: yarn
-      - run: yarn prettier --check
-
 workflows:
   tests: 
     jobs:
-      - prettier
+      prettier:
+        docker:
+          - image: cimg/node:15.1
+        steps:
+          - checkout
+          - node/install-packages:
+              pkg-manager: yarn
+          - run: yarn prettier --check
