@@ -14,10 +14,25 @@ const ModalWithCarousel = (props: IProps) => {
 
   const modalContentRef = useRef<HTMLDivElement>(null);
 
+  // This will close modal when clicking away
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (!modalContentRef.current!.contains(e.target)) {
+        handleClose();
+      }
+    };
+    
+    document.addEventListener("mousedown", handleClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, [handleClose]);
+
   useEffect(() => {
     disableBodyScroll(modalContentRef);
 
-    return () => enableBodyScroll(modalContentRef);
+    return () => enableBodyScroll(modalContentRef)
   }, [modalContentRef]);
 
   return (

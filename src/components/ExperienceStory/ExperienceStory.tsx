@@ -29,8 +29,6 @@ const ExperienceStory = (props: IProps) => {
     <ExperienceStoryContentRow content={content} />
   );
 
-  //document.body.style.overflow = isMobile && showStory ? 'hidden' : 'unset';
-
   return (
     <>
       <div
