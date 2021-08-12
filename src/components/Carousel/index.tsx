@@ -31,11 +31,11 @@ const Carousel = (props: IProps) => {
     const handleKeyEvent = (e) => {
       if (e.keyCode === 37) {
         decrementSafely();
-      } else if(e.keyCode === 39) {
+      } else if (e.keyCode === 39) {
         incrementSafely();
       }
-    }
-    
+    };
+
     document.addEventListener("keydown", handleKeyEvent);
 
     return () => {

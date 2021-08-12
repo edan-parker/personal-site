@@ -29,8 +29,8 @@ const ModalWithCarousel = (props: IProps) => {
       if (e.keyCode === 27) {
         handleClose();
       }
-    }
-    
+    };
+
     document.addEventListener("keydown", handleKeyEvent);
 
     return () => {
