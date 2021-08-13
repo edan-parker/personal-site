@@ -3,13 +3,29 @@ import { experienceStoryContent } from "../../../common/types";
 import ExperienceStorySubItem from "./ExperienceStorySubItem";
 import "./ExperienceStoryContent.scss";
 import Carousel from "../../Carousel";
+import { useEffect } from "react";
 
 interface IProps {
   content: experienceStoryContent;
+  handleClose: () => void;
 }
 
 const ExperienceStoryContentRow = (props: IProps) => {
-  const { content } = props;
+  const { content, handleClose } = props;
+
+  useEffect(() => {
+    const onSpacebarPress = (e) => {
+      if (e.keyCode === 32) {
+        handleClose();
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener("keydown", onSpacebarPress);
+    return () => {
+      document.removeEventListener("keydown", onSpacebarPress);
+    };
+  }, [handleClose]);
 
   return (
     <div className={"content-row"}>

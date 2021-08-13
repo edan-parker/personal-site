@@ -9,7 +9,7 @@
     }
   },
   {
-    "storyTitle": "Request Optimization - Calian",
+    "storyTitle": "Request Batching - Calian",
     "id": "story-request-optimization",
     "content": {
       "problem": "The main app had many list views where various actions could be performed on records. There were customer requests for bulk operations to be added, where multiple records could be selected an apply an action to all of them. There were concerns about this being slow because the infrastructure only allowed for updating individual reords.",
