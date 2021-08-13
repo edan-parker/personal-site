@@ -1,10 +1,29 @@
 [
   {
-    "storyTitle": "Flakey Tests",
+    "storyTitle": "Flakey Tests - Wave",
+    "id": "story-flakey-tests",
     "content": {
-      "problem": "The shared front-end service used the Apollo GraphQL client to make requests. In unit tests, these requests needed to be mocked so that the Promise will resolve and that the fake data from the response can be used in the component. When these were not mocked, the Promise would non-deterministically reject if given enough time, resulting in random test failures.",
-      "solution": "A coworker and I created a strict wrapper component which provided fine-tuned control error handling and more context. Implementing this tool enabled reliable reporting of unmocked requests and context including the expected variables as well as where in the component the request is made. Additionally, I implemented a linter which enforced the use of this wrapper.",
-      "result": "The switch to using our tool across the front-end was made and was able to identify hundreds of occurences of unmocked requests. The work to add mocks was distributed amongst codeowners. Best practices were also defined and aforementioned linter was turned out to prevented this happening again."
+      "problem": "The shared front-end service in Wave used the Apollo GraphQL client to make requests. In unit tests, these requests needed to be mocked so that the Promise will resolve and that the fake data from the response can be used in the test. When these were not mocked, the Promise would non-deterministically reject if given enough time, resulting in random test failures.",
+      "solution": "A coworker and I created a strict wrapper component which provided fine-tuned control over error handling and injecting context. Implementing this tool enabled reliable reporting of unmocked requests and context including the expected variables as well as where in the component the request is made. Additionally, I implemented a linter which enforced the use of this wrapper.",
+      "result": "The switch to using our tool across the front-end was made and we were able to identify hundreds of occurences of unmocked requests. The work to add mocks was distributed amongst codeowners. Best practices were also defined and the linter was turned on to prevent this from happening again."
+    }
+  },
+  {
+    "storyTitle": "Request Optimization - Calian",
+    "id": "story-request-optimization",
+    "content": {
+      "problem": "The main app had many list views where various actions could be performed on records. There were customer requests for bulk operations to be added, where multiple records could be selected an apply an action to all of them. There were concerns about this being slow because the infrastructure only allowed for updating individual reords.",
+      "solution": "I designed and implement bulk action routes in the server. I added the changes in the client to utilize the new routes, but unfortunately, these actions were still slow. After analyzing the data flow, I found that we used the framework's Ext.each() loop to send push notifications to clients, which was slow because each iteration fired a callback function.",
+      "result": "I optimized the code using regular for loops, and measuring the difference showed that the overall time of making bulk updates improved by 60%. Eventually, we got the feature in the hands of customers, who were very happy to see these changes fulfilled."
+    }
+  },
+  {
+    "storyTitle": "Data Integrity - RMC",
+    "id": "story-data-integrity",
+    "content": {
+      "problem": "The program I was working on was storing data in text files with a defined schema, and would be used by multiple different applications. The trouble was that the interpretation of the files would de-sync, and the applications would throw errors. It was also very difficult to maintain backwards compatibility for the same reason. On top of that, the files were editable with no permissions required, so someone could update the file and accidentally invalidate the whole record.",
+      "solution": "First, the read/write operations were consolidated and put in a library, so that there was one source of truth. Next, the data was transferred to an embedded SQLite database, and a utility app was created to import/export from the DB, as well as bring old versions of files up to the most recent format.",
+      "result": "This resulted in much safer data. It stopped users changing the data directly in files (which was a big problem before) and saved maintainers a lot of work helping clients reconcile their corrupted data."
     }
   }
 ]

@@ -12,7 +12,7 @@ const Bio = () => {
     <div className={"bio-container"}>
       <div className={"bio"}>
         <h1>Edan Parker</h1>
-        <h2>Full stack generalist</h2>
+        <h2>Full Stack generalist</h2>
         <IconSet />
         <div className={"bio-text"}>
           I am an{" "}

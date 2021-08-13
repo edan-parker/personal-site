@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { experienceStoryContent } from "../../common/types";
 import { useMediaQuery } from "react-responsive";
 import "./ExperienceStory.scss";
@@ -8,21 +7,18 @@ import ExperienceStoryContentModal from "./ExperienceStoryContent/ExperienceStor
 interface IProps {
   storyTitle: string;
   content: experienceStoryContent;
+  toggleStory: () => void;
+  visible: boolean;
 }
 
 const ExperienceStory = (props: IProps) => {
-  const { storyTitle, content } = props;
-  const [showStory, setShowStory] = useState(false);
+  const { storyTitle, content, toggleStory, visible } = props;
   const isMobile = useMediaQuery({ query: "(max-width: 599px)" });
-
-  const changeExpandedState = () => {
-    setShowStory(!showStory);
-  };
 
   const contentComponent = isMobile ? (
     <ExperienceStoryContentModal
       content={content}
-      handleClose={changeExpandedState}
+      handleClose={toggleStory}
       storyTitle={storyTitle}
     />
   ) : (
@@ -32,15 +28,15 @@ const ExperienceStory = (props: IProps) => {
   return (
     <>
       <div
-        className={"experience-story-button" + (showStory ? " open" : "")}
-        onClick={changeExpandedState}
+        className={"experience-story-button" + (visible ? " open" : "")}
+        onClick={toggleStory}
       >
         <h3>{storyTitle}</h3>
-        <div className={showStory ? "up" : "down"}>
-          <i className={"fa fa-2x fa-angle-" + (showStory ? "up" : "down")} />
+        <div className={visible ? "up" : "down"}>
+          <i className={"fa fa-2x fa-angle-" + (visible ? "up" : "down")} />
         </div>
       </div>
-      {showStory ? contentComponent : null}
+      {visible ? contentComponent : null}
     </>
   );
 };

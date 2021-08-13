@@ -3,6 +3,11 @@
   justify-content: center;
 }
 
+.section-description {
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
 .divider {
   border-top: 2px solid black;
   margin-top: 5px;
@@ -10,8 +15,8 @@
 
 .experience-story-button {
   display: flex;
-  margin-top: 20px;
-  padding: 5px;
+  margin-top: -2px;
+  padding: 10px;
   background-color: rgb(206, 221, 245);
   border: 2px solid black;
   justify-content: space-between;

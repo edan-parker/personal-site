@@ -34,7 +34,7 @@
         "Worked on the MaestroEDE training tool, used by various departments in the Canadian military",
         "Developed features to meet NATO requirements, expanding the client base of the tool to all NATO countries",
         "Created infrastructure for localization, increasing customer base potential to non English speaking countries",
-        "Improved batch HTTP request handling time by 60% by restructuring notification handling and optimizing Javascript code",
+        "Create batch requests for bulk operations, and improved processing time by 60% by optimizing Javascript code",
         "Spearheaded an integration testing initiative which aimed to cut QA spending and time in half upon completion"
       ],
       "startDate": "05/2020",
