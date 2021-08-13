@@ -1,4 +1,7 @@
 import { useState } from "react";
+import parse from 'html-react-parser';
+import DOMPurify from 'dompurify'
+
 import ModalWithCarousel from "../ModalWithCarousel";
 import SkillsElement from "./SkillsElement";
 
@@ -52,7 +55,11 @@ const SkillsFS = (props: IProps) => {
             return (
               <div className={"skills-modal-content"}>
                 <h1>{skill.name}</h1>
-                <span className={"skills-modal-text"}>{skill.description}</span>
+                <span className={"skills-modal-text"}>
+                  {skill.description}
+                  <br /><br />
+                  See {parse(DOMPurify.sanitize(skill.moreInfo))} for more info.
+                  </span>
               </div>
             );
           })}

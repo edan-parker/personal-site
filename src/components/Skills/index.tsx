@@ -1,4 +1,4 @@
-import skillsData from "../../common/skillsData.json";
+import skillsData from "../../common/data/skillsData.json";
 import "./Skills.scss";
 import SkillsFS from "./SkillsFS";
 

@@ -1,5 +1,5 @@
 import ExperienceStory from "./ExperienceStory";
-import experienceStoryData from "../../common/experienceStoryData.json";
+import experienceStoryData from "../../common/data/experienceStoryData.json";
 import { useState } from "react";
 
 const ExperienceStories = () => {
