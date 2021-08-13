@@ -10,6 +10,11 @@ const Bio = () => {
 
   return (
     <div className={"bio-container"}>
+      <img
+        className={"pic-of-me"}
+        src={picOfMe}
+        alt="Me on my balcony in Kingston"
+      />
       <div className={"bio"}>
         <h1>Edan Parker</h1>
         <h2>Full Stack generalist</h2>
@@ -23,11 +28,6 @@ const Bio = () => {
           development and interested in distributed computing.
         </div>
       </div>
-      <img
-        className={"pic-of-me"}
-        src={picOfMe}
-        alt="Me on my balcony in Kingston"
-      />
     </div>
   );
 };
