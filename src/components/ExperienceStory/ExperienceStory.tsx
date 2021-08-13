@@ -22,7 +22,7 @@ const ExperienceStory = (props: IProps) => {
       storyTitle={storyTitle}
     />
   ) : (
-    <ExperienceStoryContentRow content={content} />
+    <ExperienceStoryContentRow content={content} handleClose={toggleStory}/>
   );
 
   return (
