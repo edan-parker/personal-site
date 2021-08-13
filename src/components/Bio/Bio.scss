@@ -1,5 +1,6 @@
 .bio-container {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: left;
   margin-bottom: 30px;
 
@@ -70,7 +71,6 @@
     .bio {
       height: 100%;
       width: 100%;
-      margin-bottom: 20px;
 
       .icon-set {
         margin: 10px 50px 0px 50px;
@@ -84,6 +84,7 @@
     .pic-of-me {
       height: 80%;
       width: 80%;
+      margin-bottom: 45px;
     }
   }
 }
