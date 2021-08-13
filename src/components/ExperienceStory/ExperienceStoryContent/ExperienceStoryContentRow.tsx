@@ -14,7 +14,7 @@ const ExperienceStoryContentRow = (props: IProps) => {
   const { content, handleClose } = props;
 
   useEffect(() => {
-    const onSpacebarPress = e => {
+    const onSpacebarPress = (e) => {
       if (e.keyCode === 32) {
         handleClose();
         e.preventDefault();
@@ -22,9 +22,9 @@ const ExperienceStoryContentRow = (props: IProps) => {
     };
 
     document.addEventListener("keydown", onSpacebarPress);
-    return (() => {
+    return () => {
       document.removeEventListener("keydown", onSpacebarPress);
-    })
+    };
   }, [handleClose]);
 
   return (
