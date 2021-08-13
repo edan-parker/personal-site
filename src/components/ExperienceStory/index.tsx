@@ -3,8 +3,13 @@ import experienceStoryData from "../../common/experienceStoryData.json";
 import { useState } from "react";
 
 const ExperienceStories = () => {
-  const initialAccordianState = experienceStoryData.reduce((obj, story) => Object.assign(obj, { [story.id]: false }), {});
-  const [accordionsOpenState, setAccordionsOpenState] = useState(initialAccordianState);
+  const initialAccordianState = experienceStoryData.reduce(
+    (obj, story) => Object.assign(obj, { [story.id]: false }),
+    {}
+  );
+  const [accordionsOpenState, setAccordionsOpenState] = useState(
+    initialAccordianState
+  );
 
   return (
     <>
@@ -12,8 +17,10 @@ const ExperienceStories = () => {
         <h2>Experience Stories</h2>
       </div>
       <hr className={"divider"} />
-      <div className={'section-description'}>
-        This is a section to highlight some particularly interesting programming challenges that I've faced and how I solved them. Click one of the headers below and check it out!
+      <div className={"section-description"}>
+        This is a section to highlight some particularly interesting programming
+        challenges that I've faced and how I solved them. Click one of the
+        headers below and check it out!
       </div>
       {experienceStoryData.map((story) => {
         const toggleStory = () => {
@@ -29,7 +36,7 @@ const ExperienceStories = () => {
               [story.id]: true,
             });
           }
-        }
+        };
 
         return (
           <ExperienceStory
@@ -38,7 +45,7 @@ const ExperienceStories = () => {
             toggleStory={toggleStory}
             visible={accordionsOpenState[story.id]}
           />
-        )
+        );
       })}
     </>
   );
