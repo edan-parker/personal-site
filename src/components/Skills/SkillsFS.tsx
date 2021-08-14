@@ -56,7 +56,7 @@ const SkillsFS = (props: IProps) => {
               <div className={"skills-modal-content"}>
                 <h1>{skill.name}</h1>
                 <span className={"skills-modal-text"}>
-                  {skill.description}
+                  {parse(DOMPurify.sanitize(skill.description))}
                   <br />
                   <br />
                   See {parse(DOMPurify.sanitize(skill.moreInfo))} for more info.
