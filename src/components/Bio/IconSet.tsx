@@ -1,4 +1,5 @@
 import { openLinkInNewTab } from "../../utils/linkUtils";
+import resume from "../../common/files/edan-parker-resume.pdf";
 
 const IconSet = () => {
   return (
@@ -13,7 +14,7 @@ const IconSet = () => {
       <div className={"icon-element"}>
         <i
           className={"fa fa-file-o fa-4x"}
-          onClick={() => openLinkInNewTab("https://www.google.ca/")}
+          onClick={() => openLinkInNewTab(resume)}
         />
         <span className={"icon-text"}>resume</span>
       </div>
