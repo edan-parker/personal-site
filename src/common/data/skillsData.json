@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Languages",
+    "data": [
+      {
+        "name": "Javascript",
+        "description": "I have over <b>2 years</b> of experience working with Javascript, strong in ES6 syntax.",
+        "moreInfo": "<a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>Javascript</a>"
+      },
+      {
+        "name": "Python",
+        "description": "I have <b>4 months</b> professional experience in Python it for server-side code at my Wave coop, and around 1 year casual experience using it for interviews and interview prep",
+        "moreInfo": "<a href='https://www.python.org/'>Python</a>"
+      },
+      {
+        "name": "PHP",
+        "description": "I have <b>1.5 years</b> experience with server side PHP and in Wordpress applications.",
+        "moreInfo": "<a href='https://www.php.net/'>PHP</a>"
+      },
+      {
+        "name": "C#",
+        "description": "I have <b>4 months</b> experience using C#, and over 2 years experience using Java. I mention Java because they are very similar languages with a ton of crossover",
+        "moreInfo": "<a href='https://docs.microsoft.com/en-us/dotnet/csharp/'>C#</a>"
+      }
+    ]
+  },
+  {
+    "name": "Frameworks",
+    "data": [
+      {
+        "name": "ReactJS",
+        "description": "I have been using ReactJS for <b>4 months</b>, and have quickly ramped up to writing production quality frontend",
+        "moreInfo": "<a href='https://reactjs.org/'>ReactJS</a>"
+      },
+      {
+        "name": "Django",
+        "description": "I've used Django for server-side logic at my Wave coop for <b>4 months</b>. We used the CQRS event sourcing pattern, so my background revolves around that architecture.",
+        "moreInfo": "<a href='https://www.djangoproject.com/'>Django</a>"
+      },
+      {
+        "name": "Laravel",
+        "description": "I worked with Laravel and PropelORM at my Calian coop for <b>1 year</b>.",
+        "moreInfo": "<a href='https://laravel.com/'>Laravel</a>"
+      },
+      {
+        "name": "ExtJS",
+        "description": "ExtJS is a frontend framework that I used at my Calian coop for <b>1 year</b>. It uses MVC architecture which taught me important design patterns and optimizations.",
+        "moreInfo": "<a href='https://www.sencha.com/products/extjs/'>ExtJS</a>"
+      }
+    ]
+  },
+  {
+    "name": "Data Exchange",
+    "data": [
+      {
+        "name": "REST",
+        "description": "I am quite experienced with REST, using it for over <b>2 years</b>. I've had the opportunity to dig deep into the networking aspects, exploring batching and optimizations.",
+        "moreInfo": "<a href='https://en.wikipedia.org/wiki/Representational_state_transfer'>REST</a>"
+      },
+      {
+        "name": "GraphQL",
+        "description": "I have <b>4 months</b> of experience withGraphQL. I've written resolvers for queries, and defined schema as well as tests.",
+        "moreInfo": "<a href='https://graphql.org/'>GraphQL</a>"
+      },
+      {
+        "name": "gRPC",
+        "description": "gRPC is a method of data exchange that I've gotten to use during my time at Wave, gaining <b>4 months</b> experience.",
+        "moreInfo": "<a href='https://grpc.io/'>gRPC</a>"
+      },
+      {
+        "name": "Protobuf",
+        "description": "Using gRPC necessitates pb, and using it for <b>4 months</b>, I've gotten the opportunity to define plenty of messages, mappers and transformers.",
+        "moreInfo": "<a href='https://developers.google.com/protocol-buffers'>Profobuf</a>"
+      }
+    ]
+  },
+  {
+    "name": "Tools",
+    "data": [
+      {
+        "name": "Docker",
+        "description": "I have <b>2 years</b> of experience with Docker. I've used it to create my own microservices, as well as manage orchestration of an ecosystem of services with docker-compose.",
+        "moreInfo": "<a href='https://www.docker.com/'>Docker</a>"
+      },
+      {
+        "name": "Logging",
+        "description": "I have only <b>2 months</b> experience of using production logging technologies in a meaningful way. I've been able to build out Datadog dashboards, trace bugs with Sentry and debug problems with Sumo Logic.",
+        "moreInfo": "<a href='https://www.datadoghq.com/'>Datadog</a>, <a href='https://sentry.io/welcome/'>Sentry</a>, <a href='https://www.sumologic.com/'>Sumo Logic</a>"
+      },
+      {
+        "name": "Testing",
+        "description": "I have <b>2 years</b> combined experience with various testing frameworks, be it Jest for React, Pytest for Django, or SenchaTest (built on Jasmine) for ExtJS. ",
+        "moreInfo": "<a href='https://jestjs.io/'>Jest</a>, <a href='https://docs.pytest.org/en/6.2.x/'>Pytest</a>, <a href='https://docs.sencha.com/sencha_test/2.2.0/guides/product_overview.html'>Sencha Test</a>"
+      },
+      {
+        "name": "CD/CI",
+        "description": "On the CD front: I've used Jenkins for deploymments for <b>4 months</b>, and CircleCI for creating various testing steps in pipelines for <b>4 months</b> as well. I've also used Gitlab CI for <b>1 year</b>, which is quite similar to CircleCI.",
+        "moreInfo": "<a href='https://www.jenkins.io/'>Jenkins</a>, <a href='https://circleci.com/'>CircleCI</a>, <a href='https://docs.gitlab.com/ee/ci/'>GitlabCI</a>"
+      }
+    ]
+  }
+]

@@ -16,13 +16,13 @@
       "companyName": "Wave",
       "jobRole": "Software Coop",
       "description": [
-        "Developed features for the accounting platform of Wave using ReactJS that reached 100,000+ monthly users",
+        "Developed features for the accounting platform of Wave using ReactJS that reached <b>400,000 monthly users</b>",
         "Created logs and dashboards for Datadog and Sumo Logic to track and monitor releases",
-        "Co-designed a tool that surfaced unmocked GraphQL requests in unit tests which identified hundreds of broken tests",
-        "Developed infrastructure for an internal ML package that auto-merged duplicate transactions, resulting in thousands of merges per month",
+        "Co-designed a tool that surfaced unmocked GraphQL requests in unit tests which <b>identified hundreds of broken tests</b>",
+        "Developed infrastructure for an internal ML package that auto-merged duplicate transactions, resulting in <b>thousands of merges per month</b>",
         "Built code in all aspects of micro-service architecture including front-end ReactJS, backend Python/Django, Rest APIs, GraphQL resolvers, RPC functions and Protobuff schema",
         "Advocated for and applied multiple linters, improving code quality and uniformity",
-        "Wrote hundreds of unit tests for frontend and backend code for features that I worked on"
+        "Wrote <b>hundreds of unit tests</b> for frontend and backend code for features that I worked on"
       ],
       "startDate": "05/2021",
       "endDate": "08/2021"
@@ -34,8 +34,8 @@
         "Worked on the MaestroEDE training tool, used by various departments in the Canadian military",
         "Developed features to meet NATO requirements, expanding the client base of the tool to all NATO countries",
         "Created infrastructure for localization, increasing customer base potential to non English speaking countries",
-        "Create batch requests for bulk operations, and improved processing time by 60% by optimizing Javascript code",
-        "Spearheaded an integration testing initiative which aimed to cut QA spending and time in half upon completion"
+        "Create batch requests for bulk operations, and <b>improved processing time by 60%</b> by optimizing Javascript code",
+        "Spearheaded an integration testing initiative which aimed to <b>cut QA spending and time in half</b> upon completion"
       ],
       "startDate": "05/2020",
       "endDate": "04/2021"
@@ -45,9 +45,9 @@
       "jobRole": "Junior Software Engineer",
       "description": [
         "Worked on a structural analysis suite of programs for bridges in military applications",
-        " Focused on consolidating redundant code, converting Visual Basic code to C#",
+        "Focused on consolidating redundant code, converting Visual Basic code to C#",
         "Separated code for data access and modifications from computations and UI",
-        "Updated data storage method from text files to a relational database, benefitting data integrity"
+        "Updated data storage method from text files to a relational database, benefitting <b>data integrity</b>"
       ],
       "startDate": "05/2019",
       "endDate": "08/2019"

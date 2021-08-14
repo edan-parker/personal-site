@@ -1,4 +1,4 @@
-import resumeData from "../../common/resumeData.json";
+import resumeData from "../../common/data/resumeData.json";
 import "./Resume.scss";
 
 import ResumeItem from "./ResumeItem";

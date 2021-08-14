@@ -1,3 +1,6 @@
+import parse from "html-react-parser";
+import DOMPurify from "dompurify";
+
 interface IProps {
   logo: string;
   companyName: string;
@@ -22,7 +25,7 @@ const ResumeItem = (props: IProps) => {
       </div>
       <ul className={"description"}>
         {description.map((bullet, idx) => (
-          <li key={idx}>{bullet}</li>
+          <li key={idx}>{parse(DOMPurify.sanitize(bullet))}</li>
         ))}
       </ul>
     </div>
