@@ -6,7 +6,7 @@ orbs:
 jobs:
   prettier:
     docker:
-      - image: cimg/node:15.1
+      - image: cimg/node:14
     steps:
       - checkout
       - node/install-packages:
