@@ -18,7 +18,7 @@ const Resume = () => {
   return (
     <div className={"resume"}>
       <div className={"section-header"}>
-        <h2>Work</h2>
+        <h2>Experience</h2>
       </div>
       <hr className={"divider"} />
       {resumeData.work.map((resumeItem) => {
@@ -34,7 +34,7 @@ const Resume = () => {
         );
       })}
       <div className={"section-header"}>
-        <h2>School</h2>
+        <h2>Education</h2>
       </div>
       <hr className={"divider"} />
       {resumeData.education.map((resumeItem) => {
