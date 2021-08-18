@@ -59,7 +59,13 @@ const SkillsFS = (props: IProps) => {
                   {parse(DOMPurify.sanitize(skill.description))}
                   <br />
                   <br />
-                  See {parse(DOMPurify.sanitize(skill.moreInfo))} for more info.
+                  See{" "}
+                  {skill.moreInfo.map((info) => (
+                    <a href={info.link} target="_blank" rel="noreferrer">
+                      {info.name}
+                    </a>
+                  ))}{" "}
+                  for more info.
                 </span>
               </div>
             );
