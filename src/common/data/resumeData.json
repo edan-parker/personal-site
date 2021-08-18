@@ -14,7 +14,7 @@
   "work": [
     {
       "companyName": "Wave",
-      "jobRole": "Software Coop",
+      "jobRole": "Software Co-op",
       "description": [
         "Developed features for the accounting platform of Wave using ReactJS that reached <b>400,000 monthly users</b>",
         "Created logs and dashboards for Datadog and Sumo Logic to track and monitor releases",
@@ -34,7 +34,7 @@
         "Worked on the MaestroEDE training tool, used by various departments in the Canadian military",
         "Developed features to meet NATO requirements, expanding the client base of the tool to all NATO countries",
         "Created infrastructure for localization, increasing customer base potential to non English speaking countries",
-        "Create batch requests for bulk operations, and <b>improved processing time by 60%</b> by optimizing Javascript code",
+        "Created batch requests for bulk operations, and <b>improved processing time by 60%</b> by optimizing Javascript code",
         "Spearheaded an integration testing initiative which aimed to <b>cut QA spending and time in half</b> upon completion"
       ],
       "startDate": "05/2020",
