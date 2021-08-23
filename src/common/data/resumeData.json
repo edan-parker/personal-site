@@ -19,7 +19,7 @@
       "description": [
         "Developed features for Wave’s accounting app using ReactJS that reached  <b>400,000 monthly users</b>",
         "Co-designed a tool that surfaced unmocked GraphQL requests which <b>identified hundreds of broken tests</b>",
-        "Built out infrastructure in Django, Rest APIs, GraphQL, and gRPC"
+        "Built out infrastructure using Django, Rest APIs, GraphQL, and gRPC"
       ],
       "startDate": "05/2021",
       "endDate": "08/2021"
