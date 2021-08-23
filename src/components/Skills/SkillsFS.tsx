@@ -60,10 +60,13 @@ const SkillsFS = (props: IProps) => {
                   <br />
                   <br />
                   See{" "}
-                  {skill.moreInfo.map((info) => (
-                    <a href={info.link} target="_blank" rel="noreferrer">
-                      {info.name}
-                    </a>
+                  {skill.moreInfo.map((info, idx) => (
+                    <>
+                      {idx > 0 ? ", " : ""}
+                      <a href={info.link} target="_blank" rel="noreferrer">
+                        {info.name}
+                      </a>
+                    </>
                   ))}{" "}
                   for more info.
                 </span>
