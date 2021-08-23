@@ -17,15 +17,16 @@ const Bio = () => {
       />
       <div className={"bio"}>
         <h1>Edan Parker</h1>
-        <h2>Full Stack generalist</h2>
+        <h2>Full Stack Generalist</h2>
         <IconSet />
         <div className={"bio-text"}>
-          I am an{" "}
+          I'm an{" "}
           <em onClick={handleLinkClick} className="text-link">
             applied math engineering
           </em>{" "}
-          student graduating in 04/2022. I am passionate about fullstack
-          development and interested in distributed computing.
+          student graduating from Queen's University in 04/2022. I am passionate
+          about fullstack development and self-learning topics in distributed
+          computing.
         </div>
       </div>
     </div>

@@ -4,8 +4,8 @@
       "companyName": "Queen's University",
       "jobRole": "Applied Math Engineering",
       "description": [
-        "CS courses include algorithms, data structures, operating systems, networks, compilers and embedded systems",
-        "Math courses include linear algebra, stochastics, analysis, control theory"
+        "<b>Relevant CS Courses:</b> Algorithms, Data Structures, Operating Systems, Networks, Compilers, and Embedded Systems",
+        "<b>Relevant math coursework:</b> Linear Algebra, Analysis, Stochastics, Cryptography, Control Theory"
       ],
       "startDate": "09/2017",
       "endDate": "04/2022"
@@ -14,15 +14,12 @@
   "work": [
     {
       "companyName": "Wave",
+      "companyTeam": "Accounting Team",
       "jobRole": "Software Co-op",
       "description": [
-        "Developed features for the accounting platform of Wave using ReactJS that reached <b>400,000 monthly users</b>",
-        "Created logs and dashboards for Datadog and Sumo Logic to track and monitor releases",
-        "Co-designed a tool that surfaced unmocked GraphQL requests in unit tests which <b>identified hundreds of broken tests</b>",
-        "Developed infrastructure for an internal ML package that auto-merged duplicate transactions, resulting in <b>thousands of merges per month</b>",
-        "Built code in all aspects of micro-service architecture including front-end ReactJS, backend Python/Django, Rest APIs, GraphQL resolvers, RPC functions and Protobuff schema",
-        "Advocated for and applied multiple linters, improving code quality and uniformity",
-        "Wrote <b>hundreds of unit tests</b> for frontend and backend code for features that I worked on"
+        "Developed features for Wave’s accounting app using ReactJS that reached  <b>400,000 monthly users</b>",
+        "Co-designed a tool that surfaced unmocked GraphQL requests which <b>identified hundreds of broken tests</b>",
+        "Built out infrastructure in Django, Rest APIs, GraphQL, and gRPC"
       ],
       "startDate": "05/2021",
       "endDate": "08/2021"
@@ -30,11 +27,10 @@
     {
       "companyName": "Calian",
       "jobRole": "Junior Software Engineer",
+      "companyTeam": "MaestroEDE Product",
       "description": [
-        "Worked on the MaestroEDE training tool, used by various departments in the Canadian military",
-        "Developed features to meet NATO requirements, expanding the client base of the tool to all NATO countries",
-        "Created infrastructure for localization, increasing customer base potential to non English speaking countries",
-        "Created batch requests for bulk operations, and <b>improved processing time by 60%</b> by optimizing Javascript code",
+        "Created client-side NATO requested features including infrastructure for <b>localization</b>",
+        "Batched requests for bulk operations and <b>improved processing time by 60%</b> by optimizing Javascript code",
         "Spearheaded an integration testing initiative which aimed to <b>cut QA spending and time in half</b> upon completion"
       ],
       "startDate": "05/2020",
@@ -43,11 +39,11 @@
     {
       "companyName": "RMC",
       "jobRole": "Junior Software Engineer",
+      "companyTeam": "Bridge Analysis",
       "description": [
-        "Worked on a structural analysis suite of programs for bridges in military applications",
-        "Focused on consolidating redundant code, converting Visual Basic code to C#",
+        "Consolidated redundant business logic and converted Visual Basic code to C#",
         "Separated code for data access and modifications from computations and UI",
-        "Updated data storage method from text files to a relational database, benefitting <b>data integrity</b>"
+        "Updated persistent data storage from text files to a relational database, benefitting <b>data integrity</b>"
       ],
       "startDate": "05/2019",
       "endDate": "08/2019"

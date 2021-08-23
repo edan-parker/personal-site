@@ -26,6 +26,7 @@ const Resume = () => {
           <ResumeItem
             logo={logoMap[resumeItem.companyName]}
             companyName={resumeItem.companyName}
+            companyTeam={resumeItem?.companyTeam}
             jobRole={resumeItem.jobRole}
             description={resumeItem.description}
             startDate={resumeItem.startDate}
